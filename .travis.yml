@@ -2,6 +2,8 @@ os:
   - linux
   - osx
 
+sudo: true
+
 install:
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then brew update; fi
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then brew install openssl libidn rtmpdump libssh2 c-ares libmetalink libressl nghttp2; fi
